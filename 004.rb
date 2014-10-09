@@ -1,10 +1,10 @@
-palindromes = []
-
 class Util
   def self.palindrome?(str)
     str == str.reverse
   end
 end
+
+palindromes = []
 
 (1..999).to_a.reverse.each do |high|
   (1..999).to_a.reverse.each do |low|
@@ -14,6 +14,5 @@ end
 end
 
 sorted = palindromes.sort.reverse
-
 
 puts "The largest palindrome is #{sorted.first}"
